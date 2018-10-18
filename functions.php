@@ -67,7 +67,8 @@ add_action('wp_enqueue_scripts', 'theme_stylesheets');
 function register_theme_menus() {
    
 	register_nav_menus(array( 
-        'primary-navigation' => __( 'Primary Navigation' ) 
+        'primary-navigation' => __( 'Primary Navigation' ),
+
     ));
 }
 
@@ -167,6 +168,11 @@ function makePostTypeLabels( $name, $nameSingular ) {
 		'not_found_in_trash' => __('Nothing found in Bin'),
 		'parent_item_colon' => ''
 	);
+}
+function dump($data){
+	echo "<pre>";
+	print_r($data);
+	echo "</pre>";
 }
 
 ?>

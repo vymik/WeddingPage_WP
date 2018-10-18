@@ -11,6 +11,7 @@ get_header();
 <?php 
  // prijungiame dalinius failus is partials katalogo
 get_template_part('partials/hero');
+get_template_part('partials/about_us');
 
  ?>
 <?php get_footer(); ?>
