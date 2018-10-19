@@ -16,6 +16,7 @@ get_template_part('partials/countdown');
 get_template_part('partials/info');
 get_template_part('partials/gallery');
 get_template_part('partials/carousel');
+get_template_part('partials/location');
 
  ?>
 <?php get_footer(); ?>

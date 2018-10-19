@@ -18,7 +18,7 @@
 							?>
 							<img class="pic-frame" src="<?php echo $image['sizes']['medium'] ?>" alt="<?php echo $image['name']; ?>">
 							<div class="inner-round-border">
-								<img class="round-pic" src="<?php echo $image2['sizes']['medium'] ?>" alt="<?php echo $image2['name']; ?>">
+								<img class="round-pic" src="<?php echo $image2['sizes']['kvadratish'] ?>" alt="<?php echo $image2['name']; ?>">
 							</div>
 						</div>
 						<h3><?php the_sub_field('name'); ?></h3>

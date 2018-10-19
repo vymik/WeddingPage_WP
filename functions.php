@@ -181,4 +181,9 @@ function cc_mime_types($mimes) {
 }
 add_filter('upload_mimes', 'cc_mime_types');
 
+// Paveiklsliuku dydziai
+//add_image_size(pavadinimas, plotis,aukstis, ar_apkirpti_pav);
+add_image_size('kvadratish', 500, 500, true);
+add_image_size('icon', 64, 64, false);
+
 ?>

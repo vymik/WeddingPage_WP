@@ -23,7 +23,7 @@
 								<?php 
 								$image2 = get_sub_field('picture');
 								?>
-								<img class="round-pic" src="<?php echo $image2['sizes']['medium']; ?>" alt="<?php bloginfo('name'); ?>">
+								<img class="round-pic" src="<?php echo $image2['sizes']['kvadratish']; ?>" alt="<?php bloginfo('name'); ?>">
 							</div>
 						</div>
 						<h3><?php the_sub_field('name'); ?></h3>
