@@ -669,7 +669,7 @@ form h3:after{
 	width: 28%;
 	padding-bottom: 15px;
 }
-
+.guest-info-container,
 .select-form-container{
 	padding: 0 0 20px;
 }
@@ -677,6 +677,11 @@ form h3:after{
 	width: 28%;
 	text-align: left;
 }
+.textarea-container{
+	text-align: left;
+}
+
+.textarea-container label,
 .select-column label{
 	color: #65645f;
 	font-size: 0.875rem;
@@ -694,6 +699,13 @@ form h3:after{
 	border-bottom: 1px #e7e6e6 solid;
 	// padding: 15px 0;
 }
+
+textarea{
+	width: 100%;
+	border: none;
+	border-bottom: 1px #e7e6e6 solid;
+}
+
 input.form_submit_contact{
 	background: none;
 	padding: 15px 50px;
