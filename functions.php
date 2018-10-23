@@ -169,6 +169,13 @@ function makePostTypeLabels( $name, $nameSingular ) {
 		'parent_item_colon' => ''
 	);
 }
+
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}
+
 function dump($data){
 	echo "<pre>";
 	print_r($data);
@@ -185,5 +192,6 @@ add_filter('upload_mimes', 'cc_mime_types');
 //add_image_size(pavadinimas, plotis,aukstis, ar_apkirpti_pav);
 add_image_size('kvadratish', 500, 500, true);
 add_image_size('icon', 64, 64, false);
+add_image_size('hero', 1920, 1440, false);
 
 ?>

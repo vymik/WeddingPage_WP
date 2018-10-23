@@ -37,7 +37,7 @@ body{
 	text-decoration: none;
 	text-transform: uppercase;
 	color: white;
-	font-size: 0.8125rem;
+	font-size: 1rem;
 	letter-spacing: 0.4px;
     font-weight: 700;
     line-height: 30px;
@@ -159,11 +159,10 @@ body{
 }
 .hero {
 	min-height: 100vh;
-	background:linear-gradient(0deg,rgba(0,0,0,0.5),
-		rgba(0,0,0,0.5)),
-		url(../images/hero3.jpg);
-	background-size: cover;
-	background-position: center;
+	// background:linear-gradient(0deg,rgba(0,0,0,0.5),
+	// 	rgba(0,0,0,0.5));
+	// background-size: cover;
+	// background-position: center;
 	padding: 0;
 	text-align: center;
 	position:relative;
@@ -621,16 +620,12 @@ body{
 .rsvp-form {
 	display: none;
 	border: 5px solid #f6f6f4;
-	// background-color: #f6f6f4;
-	-webkit-transition: display 1s linear;
-    -moz-transition: display 1s linear;
-    -o-transition: display 1s linear;
-    transition: display 1s linear;
 	padding: 30px;
-    margin: 0 0 30px; 
+    margin: 0 0 30px;
 }
 .rsvp-form-show {
-	display: block;	
+	display: block;
+
 }
 form h3{
 	font-weight: 800;
@@ -704,6 +699,7 @@ textarea{
 	width: 100%;
 	border: none;
 	border-bottom: 1px #e7e6e6 solid;
+	margin-top: 10px;
 }
 
 input.form_submit_contact{

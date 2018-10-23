@@ -1,4 +1,8 @@
-<section id="home" class="hero">
+<?php 
+$bck_image = get_field('hero_background_image');
+?>
+<section id="home" class="hero" style="background:linear-gradient(0deg,rgba(0,0,0,0.5),
+		rgba(0,0,0,0.5)), url(<?php echo $bck_image['sizes']['hero'] ?>); background-size: cover; background-position: center;">
 	<div class="container">		
 		<!-- centrinis kvadratas pradzia-->
 		<div class="hero-content">

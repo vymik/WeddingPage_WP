@@ -7,8 +7,6 @@ $('#nav-icon3, .menu-item a').click(function(){
  $('.menu-item a').click(function(){
   $('#nav-icon3').toggleClass('open');
 });
-
-
 // ######## BURGER MENU END ############
 
 // ######## OWL CAROUSEL START #########
@@ -69,7 +67,7 @@ $('a[href*="#"]')
   });
 // #########SMOOTH SCROLLING END##########
 
-//#########Change menu bar backgorund on scroll#########
+//######### Change menu bar backgorund on scroll #########
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
 
@@ -79,8 +77,9 @@ $(window).scroll(function() {
         $(".top-menu, .top-menu ul li a, .burger i").removeClass("menugrey");
     }
 });
-// ########Change menu bar backgorund on scroll END############
+// ########Change menu bar backgorund on scroll END ############
 
+// ######## Highlight active section in menu bar START #############
 var sections = $('section')
   , nav = $('.top-menu')
   , nav_height = nav.outerHeight();
@@ -102,11 +101,9 @@ $(window).on('scroll', function () {
     }
   });
 });
-// ########### Active link on menu END ##########
+// ######## Highlight active section in menu bar START ############
+
 // ########### Countdown START ###########
-// ############################
-
-
 $('#clock').countdown('2019/09/07').on('update.countdown', function(event) {
   var $this = $(this).html(event.strftime(''
     + '<div class="timer-column"><h3>%-w</h3><p>week%!w</p><img src="/wp-wedding/wp-content/themes/vcs-starter/assets/images/about_pic_frame.png" alt="carousel_pic_frame"></div>'
@@ -114,11 +111,13 @@ $('#clock').countdown('2019/09/07').on('update.countdown', function(event) {
     + '<div class="timer-column"><h3>%H</h3><p>hours<p><img src="/wp-wedding/wp-content/themes/vcs-starter/assets/images/about_pic_frame.png" alt="carousel_pic_frame"></div>'));
 });
 -// ########### Countdown END ###########
+
 //########### Burger animation ########## 
 $('#nav-icon3').click(function(){
     $(this).toggleClass('open');
   });
 // ########## Burger animation END########
+
 // ########## change gallery pic opacity then mouse over pic heading START #######
 $('.gallery-pic-container h3').mouseover(function(){
   $(this).parent().children('img').addClass('img-opc');
@@ -127,30 +126,26 @@ $('.gallery-pic-container').mouseleave(function(){
   $('.gallery-pic-container img').removeClass('img-opc');
 });
 // ########## change gallery pic opacity then mouse over pic heading END #######
-// ########## RSVP Apear on button click ########
+
+// ########## RSVP Apear on button click START ########
 $('.rsvp-link button').click(function(){
   $('.rsvp-form').toggleClass('rsvp-form-show');
-
 });
-// ####### apear on scroll ###########
+// ########## RSVP Apear on button click END ########
+
+// ####### apear elements on scroll START ###########
 /* Every time the window is scrolled ... */
 $(window).scroll( function(){
 
     /* Check the location of each desired element */
-    $('.hideme').each( function(i){
-        
+    $('.hideme').each( function(i){       
         var bottom_of_object = $(this).position().top + $(this).outerHeight();
-        var bottom_of_window = $(window).scrollTop() + $(window).height();
-        
+        var bottom_of_window = $(window).scrollTop() + $(window).height();      
         /* If the object is completely visible in the window, fade it it */
-        if( bottom_of_window > bottom_of_object ){
-            
-            $(this).animate({'opacity':'1'},1500);
-                
-        }
-        
+        if( bottom_of_window > bottom_of_object ){           
+            $(this).animate({'opacity':'1'},1500);               
+        }       
     }); 
-
 });
-// ####### apear on scroll ###########
+// ####### apear elements on scroll END ###########
 });
