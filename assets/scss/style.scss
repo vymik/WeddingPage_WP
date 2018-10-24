@@ -29,10 +29,12 @@ body{
 	z-index: 9999;
 	height: 70px;
 }
+
 .nav {
 	display: flex;
 	list-style: none;
 }
+
  .top-menu li a {
 	text-decoration: none;
 	text-transform: uppercase;
@@ -45,6 +47,7 @@ body{
     padding: 15px 30px;
     margin: 30px 0px;   
 }
+
 .top-menu li a:hover {
 	color: #0d944f;
 }
@@ -53,21 +56,23 @@ body{
 	background-color:#f8f8f8; 
 	color:#373a38 !important; 
 }
+
 .current-menu-item{
 	color: #0d944f !important;
 }
+
 .menugrey li a:hover {
 	color: #0d944f !important;
 }
+
 .burger{
 	display: none;
 }
+
 .burger i{
 	color: white;
 	font-size: 1.3rem;
 }
-
-
 
 /* ############### Burger Icon animation START ################ */
 #nav-icon3 {
@@ -147,7 +152,7 @@ body{
 
 /*top menu end*/
 
-/*HERO start*/
+/*HERO START*/
 .hero .container {
 	display: flex;
 	max-width: 50%;
@@ -157,12 +162,9 @@ body{
 	align-items: center;
 	position: relative;
 }
+
 .hero {
 	min-height: 100vh;
-	// background:linear-gradient(0deg,rgba(0,0,0,0.5),
-	// 	rgba(0,0,0,0.5));
-	// background-size: cover;
-	// background-position: center;
 	padding: 0;
 	text-align: center;
 	position:relative;
@@ -175,6 +177,7 @@ body{
 	border: 8px solid white;
 	padding: 20px 60px;
 }
+
 .hero-content h2 {
 	color: #0d944f;
 	text-transform: uppercase;
@@ -184,6 +187,7 @@ body{
 	font-weight: 900;
 	line-height: 30px;
 }
+
 .hero-content h1 {
 	font-weight: 300;
     font-family: 'Dancing Script', cursive;
@@ -196,18 +200,19 @@ body{
 	width: 65%;
 }
 
-
 .hero-content p {
 	color: #0d944f;
 	font-size: 1.875rem;
 	width: 100%;
 }
+
 .container a{
 	position: absolute;
 	bottom: 10px;
 	font-size: 2rem;
 	color: white;
 }
+
 .bounce {	/* rodykles sokinejimas*/
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
@@ -225,7 +230,9 @@ body{
     transform: translateY(-15px);
   }
 }
-/* HERO pabaiga */
+/* HERO END */
+
+/* about us section START */
 .about-us {
 	background: white;
 	background-size: cover;
@@ -273,7 +280,6 @@ body{
 	background-color: #fff;
     padding: 0 10px;
 	font-size: 0.875rem;
-	color: #65645f;
 }
 .about-us-container .she-he {
 	width: 100%;
@@ -283,8 +289,8 @@ body{
 }
 .she-he .about-column{
 	width: 45%;
-	
 }
+
 .about-pic {
 	position: relative;
 	padding:0px;
@@ -306,12 +312,12 @@ body{
 	transition: 0.5s;
 	-webkit-transition: -webkit-transform 0.5s;
 }
+
 .inner-round-border img:hover{
 	transform: scale(1.2);
 }
 
 .pic-frame {
-
 	position: absolute;
 	margin: 0 auto;
 	left: 0;
@@ -323,6 +329,7 @@ body{
 	display: flex;
 	justify-content: center;
 }
+
 .socials a{
 	text-decoration: none;
 }
@@ -344,14 +351,16 @@ body{
     margin: 0 2px;
     cursor: pointer;
 }
+
 .icon-container:hover{
 	background-color: white;
-
 }
+
 .icon-container i{
 	color: #a9a9a9;
 	font-size: 2rem;
 }
+
 .about-column h3 {
 	margin: 0;
 	padding: 10% 0 4% 0;;
@@ -359,6 +368,7 @@ body{
 	font-weight: 900;
 	color: #454545;
 }
+
 .about-column p {
 	color: #65645f;
 	margin: 0;
@@ -373,10 +383,11 @@ body{
 	justify-content:center;
 	text-transform: uppercase;
 }
+
 .timer-column{
 	width: 28%;
-	// padding: 0;
 }
+
 .timer-container h2 {
 	text-align: center;
 	color: #92b476;
@@ -384,22 +395,21 @@ body{
 	padding: 0 0 40px 0;
 	font-weight: 700;
 }
-.timer-container h3 {
-	
+
+.timer-container h3 {	
 	color: #0d9a50;
 	font-size: 5rem;
 	font-weight: 300;
 	margin: 20px 0 0;
 }
+
 .timer-container p{
 	color: #0d9a50;
 }
+
 .timer-container img{
 	width: 100%;
-
 }
-
-
 /*Timer section END */
 
 /*Info section START */
@@ -412,6 +422,7 @@ body{
 	text-align: center;
 	justify-content: space-between;
 }
+
 .info-column {
 	width: 28%;
 	margin:0;
@@ -423,24 +434,25 @@ body{
 	color: #454545;
 	font-weight: 700;
 }
+
 .info-column p {
 	color: #65645f;
 	font-size: 0.875rem;
 }
+
 .info-column img {
 	width: 50px;
     display: block;
     margin: auto;
 }
-
 /* #########Info section END */
 
 /* ##########Galerijos section START */
-
 .memories-container {
 	// width: 100vw;
 	margin: 0 auto;
 }
+
 .memories-container .heading p span{
 	background-color: #f6f6f4;
 }
@@ -451,6 +463,7 @@ body{
 	display: flex;
 	flex-wrap: wrap;
 }
+
 .gallery-pic-container {
 	width: 25%;
 	position: relative;
@@ -459,16 +472,18 @@ body{
 
 .gallery-pic-container:hover{
 	background: none;
-
 }
+
 .gallery-pic-container img{
 	width: 100%;
 	display: block;
 	opacity: 0.5;
 }
+
 .img-opc{
 	opacity: 1 !important;
 }
+
 .gallery-pic-container img:hover{
 	opacity: 1;
 }
@@ -489,23 +504,24 @@ body{
 	font-weight: 800;
     color: #0d9a50;
 }
-
 /* ##########Galerijos section END */
-/* ##########Carousel section START */
 
+/* ##########Carousel section START */
 .carousel-section {
-	background-color: #f6f6f4;
-	
+	background-color: #f6f6f4;	
 }
+
 .carousel-section .section-centered .heading p span{
 	background-color: white;
 }
+
 .section-centered {
 	width: 70%; 
 	margin: 0 auto; 
 	text-align: center;
 	padding-bottom: 100px;
 }
+
 .section-centered .heading p span{
 	background-color: #f6f6f4;
 }
@@ -520,18 +536,18 @@ body{
 }
 
 .carousel-column p{
-
 	color: #0d9a50;
 	font-size: 0.8125rem;
     font-weight: 300;
     margin: 7px 0 13px 0;
 }
 /* ##########Carousel section END */
-/* ##########Location section START */
 
+/* ##########Location section START */
 #location .section-centered .heading p span{
 	background-color: #f6f6f4;
 }
+
 .maps-container {
 	display: flex;
 	justify-content: space-between;
@@ -544,20 +560,21 @@ body{
 	font-size: 1.25rem;
     color: #454545;
     font-weight: 700;
-    
 }
+
 .map-column i{
 	font-size: 3.125rem;
 	margin: 0 auto;
     padding: 0 0 20px;
     color: #0d9a50;
 }
+
 .map-column img{
 	width: 50px;
     display: block;
     margin: 0 auto;
     padding: 0 0 20px;
-    }
+}
 
 .map {
 	width:100%;
@@ -566,11 +583,13 @@ body{
 	-moz-box-shadow: 10px 10px 28px -6px rgba(0,0,0,0.75);
 	box-shadow: 10px 10px 28px -6px rgba(0,0,0,0.75);	
 }
+
 .location-icon i{
 	color: #0d9a50;
 	font-size: 2rem;
 }
 /* ##########Location section END */
+
 /* ########## RSVP section START */
 
 #rsvp .heading h2{
@@ -580,14 +599,17 @@ body{
 #rsvp .section-centered div ul li{
 	list-style: none;
 }
+
 .rsvp-link a,
 #rsvp .section-centered div ul li a{
 	text-decoration: none;
 }
+
 .rsvp-link{
 	padding: 0 0 60px;
 	width: 100%;
 }
+
 .rsvp-link button{
 	background: none;
 	padding: 15px 50px;
@@ -596,6 +618,7 @@ body{
 	transition: 0.5s;
 	-webkit-transition: 0.5s;
 }
+
 .rsvp-link button:hover{
 	background-color:#0d9a50;
 	color: white; 
@@ -605,22 +628,24 @@ body{
 .social-links {
 	width: 100%;	 
 }
+
 .footer-links ul,
 .social-links ul {
 	display: flex;
-	// flex-wrap:wrap;
 	justify-content: center;
-} 
+}
+
 .social-links ul li {
 	padding: 0 20px;
-	// width: 100%;
 }
+
 .social-links ul li a{
 	color: #565656;
 	font-size: 0.9375rem;
 	font-weight: 800;
 	text-transform: uppercase;
 }
+
 .social-links ul li a:hover{
 	color: #909090;
 }
@@ -628,27 +653,32 @@ body{
 .footer-links{
 	padding: 40px 0 0;
 }
+
 .footer-links ul li {
 	padding: 0 10px;
 }
+
 .footer-links ul li a{
 	color: #0d9a50;
 	font-weight: 400;
 	font-size: 0.75rem;
 }
+
 .footer-links ul li a:hover{
 	color: #65645f;
 }
+
 .rsvp-form {
 	display: none;
 	border: 5px solid #f6f6f4;
 	padding: 30px;
     margin: 0 0 30px;
 }
+
 .rsvp-form-show {
 	display: block;
-
 }
+
 form h3{
 	font-weight: 800;
     font-size: 1.25rem;
@@ -656,7 +686,8 @@ form h3{
     position: relative;
     padding-bottom: 40px;
 }
-form h3:after{
+
+form h3:after{ /* bruksnys po headingu */
 	content: ' ';
 	background: #000;
     position: absolute;
@@ -665,6 +696,7 @@ form h3:after{
     margin: 10px 47.5%;
     border: 1px solid #000;
 }
+
 .select-form-container,
 .checkbox-container{
 	display: flex;
@@ -676,21 +708,26 @@ form h3:after{
 	color:#65645f;
 	font-size: 0.875rem;
 }
+
 .checkbox-column label span{
 	color: #0d9a50;
 }
+
 .checkbox-column{
 	width: 30%;
 	padding-bottom: 15px;
 }
+
 .guest-info-container,
 .select-form-container{
 	padding: 0 0 20px;
 }
+
 .select-column{
 	width: 30%;
 	text-align: left;
 }
+
 .textarea-container{
 	text-align: left;
 }
@@ -701,22 +738,21 @@ form h3:after{
 	font-size: 0.875rem;
 	text-transform: uppercase;
 	font-weight: 800;
-	// padding: 0 0 15px 0;
 }
+
 .select-container{
 	padding: 10px 0 0;
 }
+
 .form-select{
 	width: 100%;
 	border: none;
 	height: 30px;
 	border-bottom: 1px #e7e6e6 solid;
-	// padding: 15px 0;
 }
 
 textarea{
 	width: 97%;
-	// border: none;
 	border: 1px #e7e6e6 solid;
 	margin-top: 10px;
 }
@@ -729,16 +765,18 @@ input.form_submit_contact{
 	transition: 0.5s;
 	-webkit-transition: 0.5s;
 }
+
 input.form_submit_contact:hover{
 	background-color: #0d9a50;
 	color: white;
 }
 /* ########## RSVP section END */
 
-/* skirtinga backgorund spalva kas antrai sekcijai*/
+/* skirtinga background spalva kas antrai sekcijai*/
 section:nth-child(even){
 	background-color: #f6f6f4;
 }
+
 section:nth-child(odd){
 	background-color: white;
 }
@@ -761,15 +799,17 @@ section:nth-child(odd){
 		padding: 0;
 		width: 100%;
 	}
+
 	.top-menu ul{
 		width: 100%;
 	}
+
 	.top-menu li{
 		background-color: white;
 		border-bottom: 1px #f6f6f6 solid;
 		padding: 15px
-
 	}
+
 	.top-menu li a{
 		padding: 10px 25px;
 		color: #454545;
@@ -777,7 +817,6 @@ section:nth-child(odd){
 		background-color: white;
 		font-weight: 700;
 		letter-spacing: 0.4px;
-
 	}
 
 	.nav{
@@ -787,66 +826,77 @@ section:nth-child(odd){
 
 	.nav.show{
 		display: block;
-		// height: 100vh;
 	}
+
 	.menu-item{
-		width: 100%;
-		
+		width: 100%;	
 	}
+
 	.burger{
 		display: block;
 		padding: 15px 15px 15px 15px;
 	}
+
 	// Hero content
 	.hero-content{
 		width: auto;
 	}
+
 	.hero-content h1{
 		font-size: 3rem;
 	}
+
 	.hero-content h2 {
 		font-size: 1rem;
 	}
+
 	.hero-content p {
 		font-size: 1.2rem;
 	}
+
 	// ABOUT US section
 	.heading p {
 		font-size: 0.75rem;
 		border-bottom: none;
 		padding: 0;
 		line-height: normal;
-	}	
+	}
+
 	// Timer section
 	.timer-container h3 {	
 	font-size: 4rem;
 	}
+
 	// INFO section
 	.info-column{
 		width: 100%;
 	}
+
 	// LOCATION section
 	#location .section-centered{
 		width: 85%
 	}
+
 	.map-column{
 		width: 100%;
 		height: auto;
 	}
-		// RSVP section
 
+		// RSVP section
 	.social-links ul{
 		flex-wrap:wrap;
 	}
+
 	.social-links ul li{
 		width: 100%;
 		padding: 10px 0 0;
 	}
+
 	.checkbox-column{
 		width: 100%;
 	}
-
 }
+
 @media all and (max-width: 600px){
 	// hero content
 	.hero-content h1{
@@ -857,41 +907,49 @@ section:nth-child(odd){
 	.about-us-container{
 		width: 85%;
 	}
+
 	.heading {
 		padding: 70px 0 5% 0;
 	}
+
 	.heading h2{
 		font-size: 2rem;
 	}
+
 	.she-he .about-column {
     	width: 100%;
 	}
+
 	.socials {
 		padding: 0 0 40px;
 	}
+
 	// Timer section
 	.timer-container p{
 		font-size: 0.875rem;
 	}
+
 	.timer-container h3 {	
 	font-size: 2.5rem;
 	}
+
 	//info column
 	.info-column{
 		margin: 0;
 	}
+
 	// Gallery section
 	.gallery-pic-container{
 		width: 100%;
 	}
+
 	// RSVP
 	.select-column{
 		width: 100%;
 		padding: 0 0 30px;
 	}
+
 	input.form_submit_contact{
 		padding: 10px 40px;
 	}
-
-
 }

@@ -340,7 +340,7 @@ body {
 
 /* ############### Burger Icon animation END ################ */
 /*top menu end*/
-/*HERO start*/
+/*HERO START*/
 .hero .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -444,7 +444,8 @@ body {
   }
 }
 
-/* HERO pabaiga */
+/* HERO END */
+/* about us section START */
 .about-us {
   background: white;
   background-size: cover;
@@ -495,7 +496,6 @@ body {
   background-color: #fff;
   padding: 0 10px;
   font-size: 0.875rem;
-  color: #65645f;
 }
 
 .about-us-container .she-he {
@@ -947,6 +947,7 @@ form h3 {
 }
 
 form h3:after {
+  /* bruksnys po headingu */
   content: ' ';
   background: #000;
   position: absolute;
@@ -1037,7 +1038,7 @@ input.form_submit_contact:hover {
 }
 
 /* ########## RSVP section END */
-/* skirtinga backgorund spalva kas antrai sekcijai*/
+/* skirtinga background spalva kas antrai sekcijai*/
 section:nth-child(even) {
   background-color: #f6f6f4;
 }

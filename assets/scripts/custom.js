@@ -104,13 +104,13 @@ $(window).on('scroll', function () {
 // ######## Highlight active section in menu bar START ############
 
 // ########### Countdown START ###########
-$('#clock').countdown('2019/09/07').on('update.countdown', function(event) {
+$('#clock').countdown(weddingDate).on('update.countdown', function(event) {
   var $this = $(this).html(event.strftime(''
     + '<div class="timer-column"><h3>%-w</h3><p>week%!w</p><img src="/wp-wedding/wp-content/themes/vcs-starter/assets/images/about_pic_frame.png" alt="carousel_pic_frame"></div>'
     + '<div class="timer-column"><h3>%-d</h3><p>day%!d</p><img src="/wp-wedding/wp-content/themes/vcs-starter/assets/images/about_pic_frame.png" alt="carousel_pic_frame"></div>'
     + '<div class="timer-column"><h3>%H</h3><p>hours<p><img src="/wp-wedding/wp-content/themes/vcs-starter/assets/images/about_pic_frame.png" alt="carousel_pic_frame"></div>'));
 });
--// ########### Countdown END ###########
+// ########### Countdown END ###########
 
 //########### Burger animation ########## 
 $('#nav-icon3').click(function(){
