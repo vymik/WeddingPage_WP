@@ -48,13 +48,13 @@ function theme_stylesheets(){
 		// <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 		// <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 		wp_register_style('gfonts', "https://fonts.googleapis.com/css?family=Clicker+Script|Dancing+Script:400,700|Raleway:400,400i,700,700i&amp;subset=latin-ext", array(), false, 'all');
-		wp_register_style('fontawesome', "https://use.fontawesome.com/releases/v5.3.1/css/all.css", array('gfonts'), false, 'all');
-		wp_register_style('style', ASSETS_URL . '/assets/css/style.css', array('fontawesome'), false, 'all');
+		wp_register_style('fa', ASSETS_URL . '/assets/css/font-awesome.min.css', array('gfonts'), false, 'all');
+		wp_register_style('style', ASSETS_URL . '/assets/css/style.css', array('fa'), false, 'all');
 		wp_register_style('owlcar', ASSETS_URL . '/assets/css/owl.carousel.min.css', array('style'), false, 'all');
 		wp_register_style('owltheme', ASSETS_URL . '/assets/css/owl.theme.default.min.css', array('owlcar'), false, 'all');	
 	
 		wp_enqueue_style('gfonts');
-		wp_enqueue_style('fontawesome');
+		wp_enqueue_style('fa');
 		wp_enqueue_style('style');
 		wp_enqueue_style('owlcar');
 		wp_enqueue_style('owltheme');

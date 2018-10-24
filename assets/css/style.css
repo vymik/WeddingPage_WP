@@ -260,7 +260,7 @@ body {
   font-size: 1.3rem;
 }
 
-/* ############### Burger animation START ################ */
+/* ############### Burger Icon animation START ################ */
 #nav-icon3 {
   width: 40px;
   height: 40px;
@@ -338,7 +338,7 @@ body {
   left: 50%;
 }
 
-/* ############### Burger animation END ################ */
+/* ############### Burger Icon animation END ################ */
 /*top menu end*/
 /*HERO start*/
 .hero .container {
@@ -552,21 +552,50 @@ body {
   z-index: 999;
 }
 
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .socials a {
   text-decoration: none;
 }
 
-.socials img {
-  border-radius: 50%;
+.icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   border: 1px solid #f7f7f7;
   background-color: #f7f7f7;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+  padding: 5px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  margin: 0 2px;
+  cursor: pointer;
 }
 
-.socials img:hover {
+.icon-container:hover {
   background-color: white;
+}
+
+.icon-container i {
+  color: #a9a9a9;
+  font-size: 2rem;
 }
 
 .about-column h3 {
@@ -752,7 +781,7 @@ body {
   letter-spacing: 0.5px;
   font-weight: 800;
   color: #454545;
-  margin: 13px 0 6px 0;
+  margin: 20px 0 6px 0;
   text-transform: uppercase;
 }
 
@@ -876,6 +905,10 @@ body {
   text-transform: uppercase;
 }
 
+.social-links ul li a:hover {
+  color: #909090;
+}
+
 .footer-links {
   padding: 40px 0 0;
 }
@@ -945,7 +978,7 @@ form h3:after {
 }
 
 .checkbox-column {
-  width: 28%;
+  width: 30%;
   padding-bottom: 15px;
 }
 
@@ -955,7 +988,7 @@ form h3:after {
 }
 
 .select-column {
-  width: 28%;
+  width: 30%;
   text-align: left;
 }
 
@@ -983,9 +1016,8 @@ form h3:after {
 }
 
 textarea {
-  width: 100%;
-  border: none;
-  border-bottom: 1px #e7e6e6 solid;
+  width: 97%;
+  border: 1px #e7e6e6 solid;
   margin-top: 10px;
 }
 
@@ -1105,7 +1137,7 @@ section:nth-child(odd) {
     padding: 10px 0 0;
   }
   .checkbox-column {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -1141,7 +1173,7 @@ section:nth-child(odd) {
     width: 100%;
   }
   .select-column {
-    width: 90%;
+    width: 100%;
     padding: 0 0 30px;
   }
   input.form_submit_contact {

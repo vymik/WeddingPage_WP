@@ -18,12 +18,12 @@
 							<?php 
 							$image = get_sub_field('picture_frame');
 							?>
-							<img class="pic-frame" src="<?php echo $image['sizes']['medium']; ?>" alt="<?php bloginfo('name'); ?>">
+							<img class="pic-frame" src="<?php echo $image['sizes']['medium']; ?>" alt="<?php $image['name']; ?>">
 							<div class="inner-round-border">
 								<?php 
 								$image2 = get_sub_field('picture');
 								?>
-								<img class="round-pic" src="<?php echo $image2['sizes']['kvadratish']; ?>" alt="<?php bloginfo('name'); ?>">
+								<img class="round-pic" src="<?php echo $image2['sizes']['kvadratish']; ?>" alt="<?php $image2['name']; ?>">
 							</div>
 						</div>
 						<h3><?php the_sub_field('name'); ?></h3>
@@ -35,16 +35,19 @@
 							 	// loop through the rows of data
 							    while ( have_rows('social_links') ) : the_row();
 							    	$link = get_sub_field('link');
-							    	$image3 = get_sub_field('icon');
+							    	// $image3 = get_sub_field('icon');
 							        if($link['target']=="_blank"){
 							        	$target = ' target="_blank"';
 							        } else{
 							        	$target = '';
 							        }
 							        ?>
-							        <a href="<?php echo $link['url']; ?>"<?php echo $target; ?>>
-										<img src="<?php echo $image3['sizes']['thumbnail']; ?>" alt="<?php bloginfo('name'); ?>">
-									</a>
+							        <div class="icon-container">
+								        <a href="<?php echo $link['url']; ?>"<?php echo $target; ?>>
+											<!-- <img src="<?php echo $image3['sizes']['thumbnail']; ?>" alt="<?php $image3['name']; ?>"> -->
+											<?php the_sub_field('icon'); ?>
+										</a>
+									</div>	
 							        <?php
 							    endwhile;
 							endif;

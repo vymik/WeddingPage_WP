@@ -11,9 +11,10 @@
 	</head>
 
 	<body>
-		<!-- top navigation start -->
+		<!-- top navigation -->
 		<header class="top-menu">
 			<div class="burger">
+				<!-- animated burger menu icon -->
 				<div id="nav-icon3">
 					<span></span>
 					<span></span>

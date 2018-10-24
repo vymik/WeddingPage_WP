@@ -69,7 +69,7 @@ body{
 
 
 
-/* ############### Burger animation START ################ */
+/* ############### Burger Icon animation START ################ */
 #nav-icon3 {
   width: 40px;
   height: 40px;
@@ -143,7 +143,7 @@ body{
   left: 50%;
 }
 
-/* ############### Burger animation END ################ */
+/* ############### Burger Icon animation END ################ */
 
 /*top menu end*/
 
@@ -319,19 +319,38 @@ body{
     z-index: 999;
 }
 
+.socials {
+	display: flex;
+	justify-content: center;
+}
 .socials a{
 	text-decoration: none;
 }
-.socials img{
-	border-radius: 50%;
+
+.icon-container{
+	display: flex;
+    justify-content: center;
+    align-items: center;
 	border: 1px solid #f7f7f7;
 	background-color: #f7f7f7;
-	-webkit-transition: 0.3s;
-    transition: 0.3s;
+	padding: 5px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+  	-moz-transition: all 0.3s;
+  	-o-transition: all 0.3s;
+    margin: 0 2px;
+    cursor: pointer;
 }
-
-.socials img:hover{
+.icon-container:hover{
 	background-color: white;
+
+}
+.icon-container i{
+	color: #a9a9a9;
+	font-size: 2rem;
 }
 .about-column h3 {
 	margin: 0;
@@ -496,7 +515,7 @@ body{
     letter-spacing: 0.5px;
     font-weight: 800;
     color: #454545;
-    margin: 13px 0 6px 0;
+    margin: 20px 0 6px 0;
     text-transform: uppercase;
 }
 
@@ -602,6 +621,9 @@ body{
 	font-weight: 800;
 	text-transform: uppercase;
 }
+.social-links ul li a:hover{
+	color: #909090;
+}
 
 .footer-links{
 	padding: 40px 0 0;
@@ -650,9 +672,6 @@ form h3:after{
 	justify-content: space-between;
 }
 
-// .checkbox-container{
-// 	position: relative;
-// }
 .checkbox-column label{
 	color:#65645f;
 	font-size: 0.875rem;
@@ -661,7 +680,7 @@ form h3:after{
 	color: #0d9a50;
 }
 .checkbox-column{
-	width: 28%;
+	width: 30%;
 	padding-bottom: 15px;
 }
 .guest-info-container,
@@ -669,7 +688,7 @@ form h3:after{
 	padding: 0 0 20px;
 }
 .select-column{
-	width: 28%;
+	width: 30%;
 	text-align: left;
 }
 .textarea-container{
@@ -696,9 +715,9 @@ form h3:after{
 }
 
 textarea{
-	width: 100%;
-	border: none;
-	border-bottom: 1px #e7e6e6 solid;
+	width: 97%;
+	// border: none;
+	border: 1px #e7e6e6 solid;
 	margin-top: 10px;
 }
 
@@ -824,7 +843,7 @@ section:nth-child(odd){
 		padding: 10px 0 0;
 	}
 	.checkbox-column{
-		width: 90%;
+		width: 100%;
 	}
 
 }
@@ -867,7 +886,7 @@ section:nth-child(odd){
 	}
 	// RSVP
 	.select-column{
-		width: 90%;
+		width: 100%;
 		padding: 0 0 30px;
 	}
 	input.form_submit_contact{

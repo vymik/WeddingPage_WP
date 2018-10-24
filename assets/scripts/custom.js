@@ -150,7 +150,9 @@ $(window).scroll( function(){
 // ####### apear elements on scroll END ###########
 
 // ###### Inserts span tags around last word in memories section, image title Start #############
-$('.gallery-pic-container h3').each(function(){
+
+var imageTitle = $('.gallery-pic-container h3');
+imageTitle.each(function(){
    var $this = $(this), 
    text=$this.text().trim(), // removes spaces before and after sentence
    words = text.split(" "); // separates string in to word array
@@ -160,5 +162,8 @@ $('.gallery-pic-container h3').each(function(){
 });
 // ###### Inserts span tags around last word in memories section, image title END #############
 
+var arrow = $('#home .container a');
+// console.log(arrow);
+arrow.addClass('bounce');
 
 });

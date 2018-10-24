@@ -17,6 +17,6 @@ $bck_image = get_field('hero_background_image');
 			<p><?php the_field('hero_date'); ?></p>
 		</div>
 		<!-- centrinis kvadratas pabaiga -->
-		<a href="#about-us"><i class="fas fa-angle-down bounce"></i></a> 
+		<a href="#about-us"><?php the_field('jumping_arrow'); ?></a> 
 	</div>	
 </section>
