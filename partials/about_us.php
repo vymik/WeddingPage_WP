@@ -2,7 +2,7 @@
 <section id="about-us" class="about-us">
 	<div class="about-us-container">
 		<div class="heading">
-			<h2>OUR <span>love</span> STORY</h2>
+			<h2><?php the_field('au_first_title_part'); ?><span><?php the_field('au_middle_title_part'); ?></span><?php the_field('au_last_title_part'); ?></h2>
 			<p><span><?php the_field('title_description'); ?></span></p>
 		</div>
 		<div class="she-he">

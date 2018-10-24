@@ -1,7 +1,7 @@
 <section id="location" class="location-section">
 	<div class="section-centered">
 		<div class="heading">
-			<h2>Where <span>the love</span> begins</h2>
+			<h2><?php the_field('l_first_title_part'); ?><span><?php the_field('l_middle_title_part'); ?></span><?php the_field('l_last_title_part'); ?></h2>
 			<p><span><?php the_field('location_description'); ?></span></p>
 		</div>
 		<div class="location-icon">

@@ -4,8 +4,9 @@
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<?php $favi = get_field('fav_icon', 'option'); ?>
+		<link rel="shortcut icon" href="<?php echo $favi['sizes']['favicon'] ?>" />
 		<title><?php wp_title(); ?></title>
-		<!-- kad pakilti i virsu vienu katalogu i virsu naudoti "../assets/css/style.css" -->
 		<?php wp_head(); ?>
 	</head>
 

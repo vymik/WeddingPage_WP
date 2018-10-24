@@ -193,5 +193,7 @@ add_filter('upload_mimes', 'cc_mime_types');
 add_image_size('kvadratish', 500, 500, true);
 add_image_size('icon', 64, 64, false);
 add_image_size('hero', 1920, 1440, false);
+add_image_size('favicon', 16, 16, true);
+
 
 ?>

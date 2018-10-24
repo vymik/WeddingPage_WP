@@ -1,7 +1,7 @@
 <section id="carousel" class="carousel-section">
 	<div class="section-centered">
 		<div class="heading">
-			<h2>BRIDEMAIDS <span>and</span> GROOMSMEN'S</h2>
+			<h2><?php the_field('c_first_title_part'); ?><span><?php the_field('c_middle_title_part'); ?></span><?php the_field('c_last_title_part'); ?></h2>
 			<p><span><?php the_field('carousel_heading_description'); ?></span></p>
 		</div>
 		<div class="owl-carousel owl-theme">

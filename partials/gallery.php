@@ -1,6 +1,6 @@
 <section id="memories" class="memories-container">
 	<div class="heading">
-		<h2>MEMORIES <span>for</span> CENTURIES</h2>
+		<h2><?php the_field('m_first_title_part'); ?><span><?php the_field('m_middle_title_part'); ?></span><?php the_field('m_last_title_part'); ?></h2>
 		<p><span><?php the_field('memories_heading_description'); ?></span></p>
 	</div>
 	<div class="gallery-container">
@@ -15,7 +15,7 @@
 			        	<?php
 			        	$image = get_sub_field('image');
 			        	?>
-						<img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['name'] ?>">
+						<img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['name'] ?>">
 						<h3><?php the_sub_field('image_title'); ?></h3>
 					</div>
 			        <?php

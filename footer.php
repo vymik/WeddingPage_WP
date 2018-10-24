@@ -1,7 +1,7 @@
 <section id="rsvp" class="rsvp-section">
 			<div class="section-centered">
 				<div class="heading">
-					<h2>Monika <span>and</span> Vytautas</h2>
+					<h2><?php the_field('f_first_title_part','option'); ?><span><?php the_field('f_middle_title_part','option'); ?></span><?php the_field('f_last_title_part','option'); ?></h2>
 				</div>
 				<div class="rsvp-link">
 					<button>RSVP NOW</button>
@@ -13,11 +13,22 @@
 				<!-- RSVP form apearing after RSVP NOW button click End-->
 				<div class="social-links">
 					<ul>
-						<li><a href="#">Facebook</a></li>
-						<li><a href="#">Twitter</a></li>
-						<li><a href="#">Instagram</a></li>
-						<li><a href="#">Pinterest</a></li>
-						<li><a href="#">Vimeo</a></li>
+						<?php 
+						if( have_rows('op_socials_links','option') ):
+						 	// loop through the rows of data
+						    while ( have_rows('op_socials_links','option') ) : the_row();
+						    	$link = get_sub_field('link');						    	
+						        if($link['target']=="_blank"){
+						        	$target = ' target="_blank"';
+						        } else{
+						        	$target = '';
+						        } 
+						        ?>
+						        <li><a href="<?php echo $link['url']; ?>" <?php echo $target; ?>><?php the_sub_field('socials_name') ?></a></li>
+						        <?php
+						    endwhile;
+						endif;
+						?>
 					</ul>
 				</div>
 				<div class="footer-links">
