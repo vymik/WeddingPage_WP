@@ -4,7 +4,7 @@
 					<h2><?php the_field('f_first_title_part','option'); ?><span><?php the_field('f_middle_title_part','option'); ?></span><?php the_field('f_last_title_part','option'); ?></h2>
 				</div>
 				<div class="rsvp-link">
-					<button>RSVP NOW</button>
+					<button>Rezervacija</button>
 				</div>
 				<!-- RSVP form apearing after RSVP NOW button click Start-->
 				<div class="rsvp-form">

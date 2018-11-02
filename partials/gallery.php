@@ -15,7 +15,7 @@
 			        	<?php
 			        	$image = get_sub_field('image');
 			        	?>
-						<img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['name'] ?>">
+						<img src="<?php echo $image['sizes']['kvadratish']; ?>" alt="<?php echo $image['name'] ?>">
 						<h3><?php the_sub_field('image_title'); ?></h3>
 					</div>
 			        <?php
